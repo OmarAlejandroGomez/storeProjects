@@ -1,3 +1,4 @@
+"""Este es un comentario de Juan Girón"""
 class Item:
     def __init__(self, name, description, price):
         #sin encapsular
