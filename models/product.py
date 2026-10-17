@@ -2,12 +2,12 @@ from models.item import Item
 
 class Product(Item):
     
-    def __int__(self, name, description, price, stock):
+    def __init__(self, name, description, price, stock):
         super().__init__(name, description, price)
         self.set_stock(stock)
     
     def get_stock(self):
-        return self.__stock
+        return self._stock
     
     def set_stock(self, stock):
         if(stock >= 0):

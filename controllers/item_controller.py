@@ -10,8 +10,8 @@ class ItemController:
         item = Item(name, description, price)
         self.items.append(item)   
 
-    def add_product(self, name, description, price):
-        product = Product(name, description, price)
+    def add_product(self, name, description, price, stock):
+        product = Product(name, description, price, stock)
         self.items.append(product)
         
     def get_item(self):

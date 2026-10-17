@@ -51,9 +51,11 @@ def main():
             case "1":
                 name = input("Ingresa al nombre del item: ")
                 description = input("Ingresa la descripción del item: ")
-                price = int(input("Ingresa el precio del ítem: "))
+                price = float(input("Ingresa el precio del ítem: "))
+                stock = int(input("Ingresa el número de existencias: "))
                 
-                item_controller.add_item(name,description,price)
+                #item_controller.add_item(name,description,price)
+                item_controller.add_product(name,description,price,stock)
                 print("Item agregado con éxito")
             
             case "2":
