@@ -28,7 +28,7 @@ def show_items(item_controller):
     items = item_controller.get_item()
     
     if not items:
-        print("No tiene ítems para regsitrados")
+        print("No tiene ítems para registrados")
         return
 
     for item in items:
